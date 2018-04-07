@@ -1,7 +1,7 @@
 package org.keelic.carrier.web;
 
 import org.keelic.carrier.entity.Seckill;
-import org.keelic.carrier.entity.SeckillResult;
+import org.keelic.carrier.dto.SeckillResult;
 import org.keelic.carrier.service.SeckillService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

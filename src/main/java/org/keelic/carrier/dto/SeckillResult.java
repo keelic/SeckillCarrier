@@ -1,4 +1,4 @@
-package org.keelic.carrier.entity;
+package org.keelic.carrier.dto;
 
 /**
  * @author keelic 2018-04-07
