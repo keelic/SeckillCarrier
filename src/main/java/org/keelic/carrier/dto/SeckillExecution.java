@@ -1,6 +1,7 @@
 package org.keelic.carrier.dto;
 
-import org.keelic.seckill.entity.SuccessKilled;
+
+import org.keelic.carrier.entity.SuccessKilled;
 
 /**
  * 秒杀执行结果DTO
