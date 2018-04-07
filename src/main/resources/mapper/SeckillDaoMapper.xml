@@ -4,7 +4,20 @@
 <mapper namespace="org.keelic.carrier.dao.SeckillDao">
 
     <select id="queryById" resultType="seckill">
-        SELECT * from tbl_seckill where seckill_id = ${seckillId}
+        SELECT * from tbl_seckill where seckill_id = #{seckillId}
     </select>
+
+    <select id="queryAll" resultType="seckill">
+        select * from tbl_seckill limit #{offest}, #{limit}
+    </select>
+
+    <update id="reduceNumber">
+        UPDATE tbl_seckill
+        SET number = number-1
+        WHERE seckill_id=#{seckillId}
+        AND start_time <![CDATA[ <= ]]> #{killTime}
+        AND end_time >= #{killTime}
+        AND number > 0;
+    </update>
 
 </mapper>
